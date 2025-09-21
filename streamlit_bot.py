@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import traceback
 
 # --- CONFIG ---
-COHERE_API_KEY = "PgSVyIVx2nYWXthLEq9mZpdOy1fG7FgQFpakeLvG"  # Consider using st.secrets or env vars
+COHERE_API_KEY = "PgSVyIVx2nYWXthLEq9mZpdOy1fG7FgQFpakeLvG"
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -450,4 +450,5 @@ with st.sidebar:
     3. Ask for skill gap analysis
     4. Chat about career guidance
     """)
+
 
