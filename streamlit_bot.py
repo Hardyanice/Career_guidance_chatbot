@@ -19,7 +19,8 @@ except Exception as e:
 
 # Load spaCy model with error handling
 try:
-    nlp = spacy.load("en_core_web_sm")
+    model_path="en_core_web_sm-3.8.0-py3-none-any.whl"
+    nlp = spacy.load(model_path)
 except OSError:
     st.error("spaCy English model not found. Please install it with: python -m spacy download en_core_web_sm")
     st.stop()
@@ -449,3 +450,4 @@ with st.sidebar:
     3. Ask for skill gap analysis
     4. Chat about career guidance
     """)
+
