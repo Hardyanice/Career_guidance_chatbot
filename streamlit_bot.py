@@ -17,30 +17,37 @@ except Exception as e:
     st.error(f"Failed to initialize Cohere client: {e}")
     st.stop()
 
-# Load spaCy model with error handling and fallback
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
+# Load spaCy model with automatic download for cloud deployment
+@st.cache_resource
+def load_spacy_model():
     try:
-        # Try alternative model name
-        nlp = spacy.load("en")
+        return spacy.load("en_core_web_sm")
     except OSError:
-        st.error("""
-        spaCy English model not found. Please install it with one of these commands:
-        
-        ```bash
-        python -m spacy download en_core_web_sm
-        ```
-        
-        Or if that fails:
-        
-        ```bash
-        pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-        ```
-        
-        Then restart the application.
-        """)
-        st.stop()
+        try:
+            # Try alternative model name
+            return spacy.load("en")
+        except OSError:
+            # Auto-download the model (for cloud deployment)
+            st.info("Downloading spaCy English model... This may take a moment.")
+            try:
+                import subprocess
+                import sys
+                subprocess.check_call([
+                    sys.executable, "-m", "spacy", "download", "en_core_web_sm"
+                ])
+                return spacy.load("en_core_web_sm")
+            except Exception as e:
+                st.error(f"""
+                Could not automatically download spaCy model. Error: {e}
+                
+                For cloud deployment, make sure your requirements.txt includes:
+                ```
+                https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+                ```
+                """)
+                st.stop()
+
+nlp = load_spacy_model()
 
 # --- Load Data with error handling ---
 @st.cache_data
@@ -466,5 +473,4 @@ with st.sidebar:
     2. Request resume analysis
     3. Ask for skill gap analysis
     4. Chat about career guidance
-
     """)
