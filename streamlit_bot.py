@@ -18,28 +18,19 @@ except Exception as e:
     st.stop()
 
 # Load spaCy model with error handling
-def install_local_model():
+def extract_and_load_model():
     whl_file = "en_core_web_sm-3.8.0-py3-none-any.whl"
+    extract_dir = "en_core_web_sm"
     
-    try:
-        # Install the local .whl file
-        subprocess.run([sys.executable, "-m", "pip", "install", whl_file], 
-                      check=True, capture_output=True)
-        print("✅ Model installed successfully!")
-        
-        # Now load it normally
-        nlp = spacy.load("en_core_web_sm")
-        return nlp
-        
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Error installing model: {e}")
-        raise
-    except Exception as e:
-        print(f"❌ Error loading model: {e}")
-        raise
+    # Extract the .whl file
+    with zipfile.ZipFile(whl_file, 'r') as zip_ref:
+        zip_ref.extractall(extract_dir)
+    
+    # Load from extracted directory
+    nlp = spacy.load(extract_dir)
+    return nlp
 
-# Use it
-nlp = install_local_model()
+nlp = extract_and_load_model()
 
 # --- Load Data with error handling ---
 @st.cache_data
@@ -466,6 +457,7 @@ with st.sidebar:
     3. Ask for skill gap analysis
     4. Chat about career guidance
     """)
+
 
 
 
