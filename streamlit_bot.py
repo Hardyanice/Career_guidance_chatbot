@@ -4,6 +4,7 @@ import numpy as np
 import cohere, PyPDF2, spacy
 from sklearn.feature_extraction.text import CountVectorizer
 import traceback
+import zipfile
 
 # --- CONFIG ---
 COHERE_API_KEY = "PgSVyIVx2nYWXthLEq9mZpdOy1fG7FgQFpakeLvG"
@@ -457,6 +458,7 @@ with st.sidebar:
     3. Ask for skill gap analysis
     4. Chat about career guidance
     """)
+
 
 
 
