@@ -1,32 +1,17 @@
 # Core Streamlit framework
 streamlit>=1.28.0
-
 # AI and ML libraries
 cohere>=4.21.0
-
 # Vector database and embeddings
 faiss-cpu>=1.7.4
-
 # PDF processing
 PyPDF2>=3.0.1
-
 # Natural Language Processing
 spacy>=3.7.0
-# Direct spaCy model installation for cloud deployment
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-
 # Machine Learning
 scikit-learn>=1.3.0
 joblib>=1.3.0
-
 # Numerical computing
 numpy>=1.24.0
-
 # Data manipulation
 pandas>=2.0.0
-
-# JSON handling (built into Python, but listing for completeness)
-# json - built-in module
-
-# System utilities (built into Python)
-# os - built-in module
