@@ -17,30 +17,12 @@ except Exception as e:
     st.error(f"Failed to initialize Cohere client: {e}")
     st.stop()
 
-# Load spaCy model with error handling and fallback
+# Load spaCy model with error handling
 try:
     nlp = spacy.load("en_core_web_sm")
 except OSError:
-    try:
-        # Try alternative model name
-        nlp = spacy.load("en")
-    except OSError:
-        st.error("""
-        spaCy English model not found. Please install it with one of these commands:
-        
-        ```bash
-        python -m spacy download en_core_web_sm
-        ```
-        
-        Or if that fails:
-        
-        ```bash
-        pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-        ```
-        
-        Then restart the application.
-        """)
-        st.stop()
+    st.error("spaCy English model not found. Please install it with: python -m spacy download en_core_web_sm")
+    st.stop()
 
 # --- Load Data with error handling ---
 @st.cache_data
