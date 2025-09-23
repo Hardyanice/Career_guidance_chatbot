@@ -78,7 +78,7 @@
   {"prompt": "Can you recommend job openings relevant to my profile?", "intent": "resume_job_classifier"},
   {"prompt": "What kind of positions can I apply for with my qualifications?", "intent": "resume_job_classifier"},
   {"prompt": "Help me find roles that suit my past experience in sales.", "intent": "resume_job_classifier"},
-  {"prompt": "What are the best career paths for a recent graduate?", "intent": "resume_job_classifier"}
+  {"prompt": "What are the best career paths for a recent graduate?", "intent": "resume_job_classifier"},
   {"prompt": "Can you suggest job roles based on my resume?", "intent": "resume_job_classifier"},
   {"prompt": "What job positions suit someone with my experience?", "intent": "resume_job_classifier"},
   {"prompt": "Which roles match my skills and background?", "intent": "resume_job_classifier"},
@@ -101,4 +101,5 @@
   {"prompt": "Can you suggest roles in AI and machine learning for someone with my resume?", "intent": "resume_job_classifier"}
 
 ]
+
 
