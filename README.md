@@ -2,6 +2,8 @@
 
 This is a chatbot leveraging Cohere's chat API and ML and NLP based functions to achieve intent detection, career recommendation and skill gap analysis.
 
+Streamlit app link: https://careerguidancechatbot-nfukzkaf6twldbu9e5gaj5.streamlit.app/
+
 It has 5 modules:
 1. Intent detection: Detects what the user wants from the chatbot : FAQ , Resume recommender, Skill gap analysis, General conversation, exracts specific info from a "intent_detection.json" database using RAG
 2. FAQ: Answers some specific website navigation question for a particular website that was made elsewhere(not included here), exracts specific info from a "faq.json" database using RAG
