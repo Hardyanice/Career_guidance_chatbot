@@ -1,4 +1,6 @@
-This is chatbot leveraging Cohere's chat API and ML and NLP based functions to achieve intent detection, career recommendation and skill gap analysis
+Resume Analyzer Chatbot(RAG based)
+
+This is a chatbot leveraging Cohere's chat API and ML and NLP based functions to achieve intent detection, career recommendation and skill gap analysis
 It has 5 modules:
 
 1. Intent detection: Detects what the user wants from the chatbot : FAQ , Resume recommender, Skill gap analysis, General conversation, exracts specific info from a "intent_detection.json" database using RAG
