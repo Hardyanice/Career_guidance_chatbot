@@ -10,7 +10,7 @@ It has 5 modules:
 5. General chat: Uses Cohere's chat module to answer general questions
 
 Files:
-classiier.joblib: RandomForestClassifier model for classifying job roles based o resume
-vectorizer.joblib: vectorizes text to vector data
-faq.json : FAQ prompts users can give
-intent_detection.json: detects intent of user prompt
+1. classiier.joblib: RandomForestClassifier model for classifying job roles based o resume
+2. vectorizer.joblib: vectorizes text to vector data
+3. faq.json : FAQ prompts users can give
+4. intent_detection.json: detects intent of user prompt
