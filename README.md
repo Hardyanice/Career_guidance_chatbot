@@ -1,4 +1,4 @@
-Resume Analyzer Chatbot(RAG based)
+# Resume Analyzer Chatbot(RAG based)
 
 This is a chatbot leveraging Cohere's chat API and ML and NLP based functions to achieve intent detection, career recommendation and skill gap analysis
 It has 5 modules:
