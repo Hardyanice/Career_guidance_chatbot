@@ -38,8 +38,6 @@
   {"prompt": "Guide me through submitting reviews", "intent": "faq"},
   {"prompt": "Where can I post my feedback?", "intent": "faq"},
 
-
-
   {"prompt": "What skills do I need to improve to become a data analyst?", "intent": "skill_gap_analyst"},
   {"prompt": "Can you analyze my resume and identify skill gaps?", "intent": "skill_gap_analyst"},
   {"prompt": "How can I improve my communication skills?", "intent": "skill_gap_analyst"},
@@ -50,7 +48,26 @@
   {"prompt": "How do I prepare for technical interviews?", "intent": "skill_gap_analyst"},
   {"prompt": "What are the most in-demand soft skills for leadership roles?", "intent": "skill_gap_analyst"},
   {"prompt": "Can you help me identify gaps in my data science skills?", "intent": "skill_gap_analyst"},
-
+  {"prompt": "What skills do I need to improve to become a data analyst?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you analyze my resume and identify skill gaps?", "intent": "skill_gap_analyst"},
+  {"prompt": "How can I improve my communication skills?", "intent": "skill_gap_analyst"},
+  {"prompt": "Which training programs do you recommend for marketing specialists?", "intent": "skill_gap_analyst"},
+  {"prompt": "What skills should I develop to advance my career in software development?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you provide feedback on the skills I need to work on?", "intent": "skill_gap_analyst"},
+  {"prompt": "Suggest courses to fill my skill gaps in project management.", "intent": "skill_gap_analyst"},
+  {"prompt": "How do I prepare for technical interviews?", "intent": "skill_gap_analyst"},
+  {"prompt": "What are the most in-demand soft skills for leadership roles?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you help me identify gaps in my data science skills?", "intent": "skill_gap_analyst"},
+  {"prompt": "Which skills should I focus on to get promoted to a senior developer?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you suggest courses to improve my project management capabilities?", "intent": "skill_gap_analyst"},
+  {"prompt": "What technical skills am I missing for a cloud computing role?", "intent": "skill_gap_analyst"},
+  {"prompt": "How can I strengthen my leadership and team management skills?", "intent": "skill_gap_analyst"},
+  {"prompt": "Which programming languages should I learn to enhance my profile?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you help me identify skills required for product management roles?", "intent": "skill_gap_analyst"},
+  {"prompt": "What courses or certifications will help me transition into AI and ML?", "intent": "skill_gap_analyst"},
+  {"prompt": "Which skills should I improve to become a successful business analyst?", "intent": "skill_gap_analyst"},
+  {"prompt": "Can you highlight gaps in my resume for a marketing career?", "intent": "skill_gap_analyst"},
+  {"prompt": "How do I improve my analytical thinking and problem-solving skills?", "intent": "skill_gap_analyst"},
  
   {"prompt": "Can you suggest job roles based on my resume?", "intent": "resume_job_classifier"},
   {"prompt": "What job positions suit someone with my experience?", "intent": "resume_job_classifier"},
@@ -62,4 +79,26 @@
   {"prompt": "What kind of positions can I apply for with my qualifications?", "intent": "resume_job_classifier"},
   {"prompt": "Help me find roles that suit my past experience in sales.", "intent": "resume_job_classifier"},
   {"prompt": "What are the best career paths for a recent graduate?", "intent": "resume_job_classifier"}
+  {"prompt": "Can you suggest job roles based on my resume?", "intent": "resume_job_classifier"},
+  {"prompt": "What job positions suit someone with my experience?", "intent": "resume_job_classifier"},
+  {"prompt": "Which roles match my skills and background?", "intent": "resume_job_classifier"},
+  {"prompt": "Suggest some career options for a software engineer.", "intent": "resume_job_classifier"},
+  {"prompt": "What job titles fit someone with machine learning skills?", "intent": "resume_job_classifier"},
+  {"prompt": "What roles are available in marketing?", "intent": "resume_job_classifier"},
+  {"prompt": "Can you recommend job openings relevant to my profile?", "intent": "resume_job_classifier"},
+  {"prompt": "What kind of positions can I apply for with my qualifications?", "intent": "resume_job_classifier"},
+  {"prompt": "Help me find roles that suit my past experience in sales.", "intent": "resume_job_classifier"},
+  {"prompt": "What are the best career paths for a recent graduate?", "intent": "resume_job_classifier"},
+  {"prompt": "Which job roles are suitable for someone transitioning from finance to tech?", "intent": "resume_job_classifier"},
+  {"prompt": "Can you analyze my resume and suggest roles in product management?", "intent": "resume_job_classifier"},
+  {"prompt": "What career opportunities fit a person with a mix of design and coding skills?", "intent": "resume_job_classifier"},
+  {"prompt": "I have experience in customer support, what positions can I apply for?", "intent": "resume_job_classifier"},
+  {"prompt": "Based on my resume, which IT roles would suit me best?", "intent": "resume_job_classifier"},
+  {"prompt": "Can you recommend job titles for someone with strong leadership experience?", "intent": "resume_job_classifier"},
+  {"prompt": "Which roles match someone with a background in analytics and reporting?", "intent": "resume_job_classifier"},
+  {"prompt": "What entry-level positions are available for fresh graduates in engineering?", "intent": "resume_job_classifier"},
+  {"prompt": "I have experience in data visualization, what careers are suitable?", "intent": "resume_job_classifier"},
+  {"prompt": "Can you suggest roles in AI and machine learning for someone with my resume?", "intent": "resume_job_classifier"}
+
 ]
+
